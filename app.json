@@ -1,8 +1,0 @@
-{
-  "name": "renfy",
-  "description": "A barebones Node.js app using Express 4 help people how to find the best place to rengt and 
-                 house and rooms",
-  "repository": "https://github.com/RentfyHQ/renfy",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"]
-}
