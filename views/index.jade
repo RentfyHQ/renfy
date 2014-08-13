@@ -35,7 +35,7 @@ block content
         agent [i] = 'sandra@example.com';
         i++;
       script(type='text/javascript').
-        locations [i] = [-6.830523797815413, 39.22150291837818];
+        locations [i] = [-6.821874477509404, 39.26241559228025];
         mapicon [i] =  '<img width="80" height="80" src="http://themes.layero.com/grahawp/wp-content/uploads/2013/10/img3-80x80.jpg" class="attachment-mapimage wp-post-image" alt="img3" />';
         title [i] = 'hotel continental';
         link [i] = '#'
@@ -49,7 +49,7 @@ block content
         agent [i] = 'charles@webnesters.com';
         i++;
       script(type='text/javascript').
-        locations [i] = [ -6.822401434965106, 39.28429296681372];
+        locations [i] = [ -6.812401434965106, 39.27429296681372];
         mapicon [i] =  '<img width="80" height="80" src="http://themes.layero.com/grahawp/wp-content/uploads/2013/10/Capture-80x80.png" class="attachment-mapimage wp-post-image" alt="Capture" />';
         title [i] = 'Nikko Tower';
         link [i] = '#'
@@ -79,7 +79,7 @@ block content
       script(type='text/javascript').
         locations [i] = [ -6.823874477509404, 39.26141559228025];
         mapicon [i] =  '<img width="80" height="80" src="http://themes.layero.com/grahawp/wp-content/uploads/2013/10/img2-1-80x80.jpg" class="attachment-mapimage wp-post-image" alt="img2 (1)" />';
-        title [i] = '123 S Catalina St Los Angeles, CA 90004 United States';
+        title [i] = 'Quality Plaza';
         link [i] = '#'
         image [i] = '<img src=http://themes.layero.com/grahawp/wp-content/uploads/2013/10/img2-1-500x418.jpg width="500px" height="200px">';
         type [i] = 'Apartment';
@@ -103,16 +103,17 @@ block content
                 fieldset
                   .toggle.toggle-light(style='text-align:center')
                   select#location.form-control(name='location')
-                    option(value='', selected='selected') Location
-                    option(value='central-la') Central LA
-                    option(value='west-lake') West Lake
-                    option(value='edendale') Edendale
-                    option(value='south-catalina') South Catalina
-                    option(value='la-2') Los Angeles
+                    option(value='mbezi', selected='selected') Mbezi
+                    option(value='masaki') Masaki
+                    option(value='msasani') Msasani
+                    option(value='kurasini') Kurasini
+                    option(value='ubungo') Ubungo
+                    option(value='makongo') Makongo
                   select#property_type.form-control(name='property_type')
                     option(value='', selected='selected') Property Type
-                    option(value='villa') Villa
+                    option(value='house') House
                     option(value='apartment') Apartment
+                    option(value='room') Room
                   select#bed.form-control(name='bed')
                     option(value='', selected='selected') Bedrooms
                     option(value='2') 2
@@ -146,7 +147,7 @@ block content
                     input#price(type='hidden', name='price')
                     input#orderby(type='hidden', name='orderby', value='date')
                     input#listings(type='hidden', name='listings', value='true')
-                    input.btn.btn-green(type='submit', value='SEARCH NOW', style='margin:0 auto; width:200px;')
+                    input.btn.btn-green(type='', value='SEARCH NOW', style='margin:0 auto; width:200px;')
     .bottoom-text
       .container
         .col-md-4
