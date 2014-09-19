@@ -1,0 +1,174 @@
+@import 'bootstrap/less/bootstrap.less';
+
+/*if no flat-ui un comment this*/
+
+@import 'font-awesome/less/font-awesome.less';
+
+@fa-font-path: '/bower_components/font-awesome/fonts';
+
+@icon-font-path: '/bower_components/flat-ui/fonts/';
+
+@import 'flat-ui/less/flat-ui.less';
+
+
+/**
+ * App-wide Styles
+ */
+ body{
+ 	background-image:url(/assets/images/bg3.png);
+ }
+.social .nav li {
+	float:left !important;
+	width:25px !important;
+	border:none !important;
+	margin:5px 5px 0px 0px;
+
+	a {
+	border:none !important;
+
+	 &:hover{
+	 	background-color:#242424;
+	}
+}
+    
+}
+.socialicon {
+	width:20px;
+	float:left;
+	border:none;
+	padding:5px;
+}
+.scoialt {
+	width:20px;
+	float:left;
+	border:none;
+	padding:5px;
+}
+.scoialt .facebook {
+	background-image:url(/assets/images/facebook.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .twitter {
+	background-image:url(/assets/images/twitter.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .google {
+	background-image:url(/assets/images/gmail.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .mail {
+	background-image:url(/assets/images/mail.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .pintrest {
+	background-image:url(/assets/images/pint.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .digg {
+	background-image:url(/assets/images/digg.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .rss {
+	background-image:url(/assets/images/rssfeed.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .facebook:hover {
+	background-image:url(/assets/images/facebook-hover.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .twitter:hover {
+	background-image:url(/assets/images/twitter-hover.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .google:hover {
+	background-image:url(/assets/images/gmail-hover.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .mail:hover {
+	background-image:url(/assets/images/mail-hover.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .pintrest:hover {
+	background-image:url(/assets/images/pint-hover.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .digg:hover {
+	background-image:url(/assets/images/digg-hover.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.scoialt .rss:hover {
+	background-image:url(/assets/images/rssfeed-hover.png);
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+.copyright {
+	background-color:#000;
+	padding:10px 0px;
+	font-size:13px;
+}
+.contacts{
+	text-align: left;
+
+}
+#map{
+	height:480px;
+	width :100%;
+}
+
+.property_map_details {
+	width:315px;
+	background-color:#FFFFFF;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	padding:15px;
+	box-shadow:0 6px 6px -6px #777777;
+}
+// injector
+@import 'account/login/login.less';
+@import 'admin/admin.less';
+@import 'directives/slider/slider.less';
+@import 'main/main.less';
+@import 'infowindow/infowindow.less';
+// endinjector

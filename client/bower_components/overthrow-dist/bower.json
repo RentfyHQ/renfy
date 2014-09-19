@@ -1,0 +1,10 @@
+{
+  "name": "overthrow-dist",
+  "version": "0.7.0",
+  "main": "overthrow.js",
+  "ignore": [
+    "LICENSE",
+    "*.json",
+    "*.md"
+  ]
+}

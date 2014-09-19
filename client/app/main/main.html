@@ -1,0 +1,103 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<section class="row">
+  <div class="col-xs-12 col-md-4">
+  <div  class="block2">
+  <fieldset>
+    <select id="location" name="location" class="form-control">
+      <option value="mbezi" selected="selected">Mbezi</option>
+      <option value="masaki">Masaki</option>
+      <option value="msasani">Msasani</option>
+      <option value="kurasini">Kurasini</option>
+      <option value="ubungo">Ubungo</option>
+      <option value="makongo">Makongo</option>
+    </select>
+    <select  class="form-control">
+      <option value="" selected="selected">Property Type</option>
+      <option value="house">House</option>
+      <option value="apartment">Apartment</option>
+      <option value="room">Room</option>
+      </select>
+      <select id="bed" name="bed" class="form-control">
+        <option value="" selected="selected">Bedrooms</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <select id="bath" name="bath" class="form-control">
+        <option value="" selected="selected">Bathrooms</option>
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="1">1</option>
+      </select>
+      <slider value="sliderValue" min=0 max=100 orientation="horizontal" range="min"></slider>
+{{sliderValue| currency:"Tshs "}}
+
+      <div class="search"><a href="#" class="btn btn-primary btn-large btn-block">Search</a></div>
+      </fieldset>
+    </div>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <gmap url="data.json" params=""></gmap>
+  </div>
+    
+    
+ 
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Features:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
+        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <form class="thing-form">
+    <label>Syncs in realtime across clients</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="newThing">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
+      </span>
+    </p>
+  </form>
+</div>
+
+<section>
+    <div class="row">
+    <div class="col-xs-12 col-md-4 ">
+    <div class="block1">
+    <div class="icon"><img src="/assets/images/icon3.png" alt="image"></div>
+      <h1>Guideline</h1>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <div class="readmore"><a href="#" class="btn btn-primary btn-large btn-block">Readmore</a></div>
+    </div>
+      
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div class="block1">
+     <div class="icon"><img src="/assets/images/icon2.png" alt="image"></div>
+        <h1>Real Estate</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <div class="readmore"><a href="#" class="btn btn-primary btn-large btn-block">Readmore</a></div>
+      </div>
+      
+    </div>
+      <div class="col-xs-12 col-md-4">
+         <div class="block1">
+         <div class="icon"><img src="/assets/images/icon1.png" alt="image"></div>
+           <h1>About Us</h1>
+           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <div class="readmore"><a href="#" class="btn btn-primary btn-large btn-block ">Readmore</a></div>
+         </div>
+        
+      </div>
+
+      </div>
+</section>
+
+<div ng-include="'components/footer/footer.html'"></div>

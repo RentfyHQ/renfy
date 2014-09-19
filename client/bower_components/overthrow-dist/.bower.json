@@ -1,0 +1,21 @@
+{
+  "name": "overthrow-dist",
+  "version": "0.7.0",
+  "main": "overthrow.js",
+  "ignore": [
+    "LICENSE",
+    "*.json",
+    "*.md"
+  ],
+  "homepage": "https://github.com/bensmithett/overthrow-dist",
+  "_release": "0.7.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.7.0",
+    "commit": "c72dc46ee60c46c123a198541dbd451043013c5f"
+  },
+  "_source": "git://github.com/bensmithett/overthrow-dist.git",
+  "_target": "0.7.0",
+  "_originalSource": "overthrow-dist",
+  "_direct": true
+}
